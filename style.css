@@ -1,0 +1,902 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+  text-decoration: none;
+  list-style: none;
+}
+nav ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  background: #e9e6d7;
+  position: sticky;
+  top: 0;
+  z-index: 999;
+}
+nav ul li {
+  margin: 25px 18px;
+}
+nav ul li a {
+  font-size: 16px;
+  color: #26534c;
+}
+nav ul li :hover {
+  color: #f2ac0d;
+  text-decoration: none;
+  transition: 0.5s;
+}
+.btn {
+  text-decoration: none;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+.btn-login {
+  color: #26534c;
+}
+.btn-login:hover {
+  color: #f2ac0d;
+}
+
+.btn-signup {
+  background-color: #26534c;
+  color: #fff;
+  margin-left: 10px;
+}
+.btn-signup:hover {
+  color: #f2ac0d;
+}
+
+/* Top Section */
+
+.top {
+  height: 1013px;
+  width: 100%;
+  padding: 0 135px;
+  margin-bottom: -180px;
+  background-color: #e9e6d7;
+}
+.line1 {
+  margin-top: -12px;
+  color: #26534c;
+}
+.top_heading {
+  width: 100%;
+  margin: 20px 0px;
+  margin-bottom: 0px;
+}
+.top_h {
+  text-align: center;
+}
+.top_p {
+  text-align: center;
+  margin-top: 20px;
+  margin-bottom: 5px;
+  font-size: 12px;
+}
+.btn_bg {
+  height: 95px;
+  width: 380px;
+  margin: 0 auto;
+}
+.btn_1_top,
+.btn_2_top {
+  margin-top: 20px;
+  margin-left: 10px;
+  border: none;
+  border-radius: 3px;
+  padding: 10px 20px;
+  transition: 0.5s;
+}
+.btn_1_top {
+  background-color: #f2ac0d;
+}
+.btn_1_top:hover {
+  background-color: #e9e6d7;
+  border: 1px solid #26534c;
+}
+.btn_2_top {
+  border: 1px solid #26534c;
+}
+.btn_2_top:hover {
+  background-color: #f2ac0d;
+  border: none;
+}
+.book,
+.mic {
+  margin-right: 10px;
+}
+
+/* Top Image Section */
+.image_bg_top {
+  height: 520px;
+  width: 1170px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.img_1_top {
+  height: 445px;
+  width: 670px;
+  border-radius: 3% 3% 0% 0% / 3% 3% 0% 10%;
+}
+.img_2_top {
+  height: 445px;
+  width: 470px;
+  border-radius: 3% 3% 0% 0% / 3% 3% 0% 10%;
+}
+.img_1 {
+  height: 445px;
+  width: 670px;
+  object-fit: cover;
+  border-radius: 3% 3% 0% 0% / 3% 3% 0% 10%;
+}
+.img_2 {
+  height: 445px;
+  width: 470px;
+  object-fit: cover;
+  border-radius: 3% 3% 0% 0% / 3% 3% 0% 10%;
+}
+
+/* Ayat No Section */
+
+.ayant_no {
+  height: 210px;
+  width: 100%;
+  background-color: #1c3f39;
+  margin-top: 0px;
+  padding: 0 135px;
+  align-items: center;
+  justify-content: flex-start;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+}
+.s_no_h {
+  text-align: center;
+  color: #f2ac0d;
+  font-weight: 600;
+  font-size: 30px;
+}
+.s_no_p {
+  text-align: center;
+  color: #fff;
+  font-size: 15px;
+}
+
+/* Middle Section  */
+
+.middle {
+  height: 1730px;
+  width: 100%;
+  padding: 0 135px;
+  background-color: #e9e6d7;
+}
+.mid_about {
+  display: grid;
+  grid-template-columns: repeat(2, 570px);
+  column-gap: 80px;
+  width: 100%;
+  height: 700px;
+  align-items: center;
+  padding: 140px 0px 108px 0px;
+}
+.mid_about_left {
+  grid-column-start: 1;
+  grid-column-end: 2;
+  display: flex;
+  gap: 20px;
+}
+.mid_img_1 {
+  height: 382px;
+  width: 270px;
+  border-radius: 10px;
+  object-fit: cover;
+}
+.mid_img_2 {
+  height: 382px;
+  width: 270px;
+  border-radius: 10px;
+  object-fit: cover;
+  position: relative;
+  top: 30px;
+}
+.mid_about_right {
+  grid-column-start: 2;
+  grid-column-end: 3;
+}
+.about_h {
+  font-size: 35px;
+  word-spacing: 2px;
+  margin-bottom: 15px;
+  color: #1c3f39;
+}
+.about_p {
+  color: #556561;
+  margin-top: 20px;
+  font-size: 15px;
+}
+.mid_learn_more {
+  margin-top: 30px;
+  font-size: 15px;
+  font-weight: 500;
+  height: 54px;
+  width: 160px;
+  background-color: #f2ac0d;
+  color: #1c3f39;
+  border: none;
+  border-radius: 6px;
+  transition: 0.8s;
+}
+.mid_learn_more:hover {
+  background-color: #e9e6d7;
+  border: 1px solid #1c3f39;
+}
+
+/* Translation Section */
+
+.mid_transltn {
+  height: 50px;
+  width: 100%;
+  display: flex;
+}
+
+.trans_h {
+  font-size: 35px;
+  word-spacing: 2px;
+  margin-bottom: 15px;
+  color: #1c3f39;
+  text-align: center;
+}
+.trans_sorting {
+  width: 100%;
+  height: 54px;
+}
+.selector_lft {
+  width: 184px;
+  height: 54px;
+  display: flex;
+  padding: 5px;
+  border-radius: 6px;
+  align-items: center;
+  border: 2px solid #ccd3d2;
+}
+.surah_s_btn {
+  border: none;
+  width: 50%;
+  height: 42px;
+  margin: 5px;
+  color: #fff;
+  background-color: #1c3f39;
+  padding: 10px;
+  border-radius: 6px;
+  transition: 0.5s;
+}
+.surah_s_btn:hover {
+  background-color: #f2ac0d;
+  color: #1c3f39;
+}
+.juz_s_btn {
+  border: none;
+  background-color: #e9e6d7;
+  width: 50%;
+  height: 42px;
+  margin: 5px;
+  color: #1c3f39;
+  padding: 10px;
+  border-radius: 6px;
+}
+
+/* Sorting */
+
+.selector_right {
+  height: 28px;
+  width: 160px;
+}
+#surah {
+  border: none;
+  background-color: #e9e6d7;
+}
+.sortrrt_p {
+  font-weight: 900;
+}
+.surah_name_list {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 25px;
+  margin-top: 50px;
+  justify-content: space-around;
+}
+
+/* Surah List */
+
+.surah_1 {
+  height: 100px;
+  width: 390px;
+  background-color: #fff;
+  border-radius: 6px;
+  display: flex;
+  align-items: center;
+  padding: 12px;
+  transition: 0.5s;
+}
+.no_surah_1 {
+  height: 38px;
+  width: 38px;
+  margin-right: 15px;
+  padding: 8px 10px;
+  background-color: #e9e6d7;
+}
+.surah_h {
+  font-size: 16px;
+  font-weight: bold;
+  margin-bottom: 2px;
+  margin-top: 16px;
+}
+.a_surah_name_div {
+  margin-left: 130px;
+}
+.a_surah {
+  text-align: right;
+  font-size: 15px;
+  font-weight: bold;
+  margin-top: 15px;
+}
+.a_surah_p {
+  font-size: 11px;
+  margin-top: 2px;
+  text-align: right;
+}
+
+/* Surah List 2 */
+
+.surah_2 {
+  grid-column-start: 2;
+  grid-column-end: 3;
+  height: 100px;
+  width: 390px;
+  background-color: #fff;
+  border-radius: 6px;
+  display: flex;
+  align-items: center;
+  padding: 35px;
+  transition: 0.5s;
+}
+.surah_3 {
+  grid-column-start: 3;
+  grid-column-end: 4;
+  height: 100px;
+  width: 390px;
+  background-color: #fff;
+  border-radius: 6px;
+  display: flex;
+  align-items: center;
+  padding: 35px;
+  transition: 0.5s;
+}
+#active_bg:hover {
+  background-color: #1c3f39;
+  color: #e9e6d7;
+  -webkit-box-shadow: 13px 5px 66px -23px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 13px 5px 66px -23px rgba(0, 0, 0, 0.75);
+  box-shadow: 13px 5px 66px -23px rgba(0, 0, 0, 0.75);
+}
+#active_no {
+  color: #1c3f39;
+}
+
+/* Middle Section Button */
+.button_container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 70px;
+}
+.show_more_mid {
+  height: 54px;
+  width: 160px;
+  background-color: #f2ac0d;
+  color: #1c3f39;
+  border: none;
+  border-radius: 6px;
+  transition: 0.8s;
+  font-weight: 500;
+}
+.show_more_mid:hover {
+  background-color: #e9e6d7;
+  border: 1px solid #1c3f39;
+}
+
+/* Listen Speach Section */
+
+.bg_speach {
+  height: 580px;
+  width: 100%;
+  background-color: #26534c;
+  display: flex;
+  align-items: center;
+}
+.inner_d_spech1 {
+  height: 580px;
+  width: 60%;
+}
+.inner_d_spech2 {
+  height: 580px;
+  width: 40%;
+}
+
+/* Speach Heading and P */
+
+.speach_h {
+  color: #fff;
+  margin-top: 110px;
+  margin-left: 50px;
+  font-size: 35px;
+}
+.speach_p {
+  color: #fff;
+  margin-top: 20px;
+  margin-left: 50px;
+  font-size: 15px;
+  width: 80%;
+}
+/* Image Control Slider Button */
+
+.imge_C_slider {
+  height: 60px;
+  width: 200px;
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  margin-left: 50px;
+}
+.left_btn {
+  height: 48px;
+  width: 48px;
+  border: 1px solid #fff;
+  background-color: #26534c;
+  border-radius: 6px;
+  padding: 12px 18px;
+  transition: 0.3s;
+}
+.left_btn:active {
+  scale: 0.9;
+  border: none;
+}
+#btn_lft {
+  color: #fff;
+}
+.img_cng_1,
+.img_cng_2,
+.img_cng_3 {
+  height: 6px;
+  width: 6px;
+  border-radius: 50%;
+  border: none;
+  background-color: #3c645d;
+  margin: 10px;
+}
+.img_cng_1 {
+  margin-left: 25px;
+}
+.img_cng_3 {
+  margin-right: 25px;
+}
+.right_btn {
+  height: 48px;
+  width: 48px;
+  border: none;
+  background-color: #fff;
+  border-radius: 6px;
+  padding: 12px 18px;
+  transition: 0.3s;
+}
+.right_btn:active {
+  scale: 0.9;
+  border: none;
+}
+.inner_d_spech1 {
+  display: flex;
+  flex-wrap: wrap;
+}
+.spch_1 {
+  height: 380px;
+  width: 200px;
+  object-fit: cover;
+  margin: 100px 20px;
+  border-radius: 8px;
+}
+.spch_2 {
+  height: 380px;
+  width: 370px;
+  object-fit: cover;
+  margin: 100px 20px;
+  border-radius: 8px;
+}
+.active_img {
+  height: 380px;
+  width: 370px;
+  position: relative;
+}
+.btn_active_spch {
+  background-color: #f2ac0d;
+  color: #1c3f39;
+  border: none;
+  border-radius: 6px;
+  padding: 10px 20px;
+  transition: 0.5s;
+  height: 54px;
+  width: 160px;
+  position: absolute;
+  top: 105%;
+  left: 35%;
+}
+.active_img_h {
+  position: absolute;
+  top: 90%;
+  left: 30%;
+  color: #fff;
+  text-align: center;
+}
+.active_img_p {
+  position: absolute;
+  top: 95%;
+  left: 37%;
+  color: #fff;
+  text-align: center;
+  font-size: 12px;
+}
+.btn_active_spch:active {
+  scale: 0.9;
+  border: none;
+}
+
+/* Latest Islamic blog */
+
+.lIB {
+  width: 100%;
+  height: 1250px;
+  background-color: #fff;
+  padding: 150px 135px;
+}
+.lib_h {
+  font-size: 35px;
+  text-align: center;
+  margin: 12px;
+  color: #1c3f39;
+}
+.lib_p {
+  font-size: 15px;
+  color: #556561;
+  text-align: center;
+  margin: 12px;
+}
+.article_lib {
+  width: 100%;
+  height: 604px;
+  display: grid;
+  margin-top: 60px;
+  grid-template-columns: repeat(2, 570px);
+  justify-content: center;
+  grid-gap: 32px;
+}
+.artcle {
+  height: 286px;
+  width: 570px;
+  background-color: #fff;
+  display: flex;
+  border-radius: 8px;
+  padding: 20px;
+  transition: 0.5s;
+  border: 1px solid #ccd3d2;
+}
+.artcle:hover {
+  box-shadow: 0 0 11px rgba(33, 33, 33, 0.2);
+}
+
+.img_Lib {
+  height: 248px;
+  width: 234px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+.lib_h_img {
+  font-size: 18px;
+  text-align: left;
+  line-height: 28px;
+  margin-left: 20px;
+  margin-top: 10px;
+  font-weight: 500;
+  margin-bottom: 10px;
+  color: #1c3f39;
+}
+.border_line {
+  width: 35px;
+  height: 2px;
+  border-radius: 1px;
+  background-color: #1c3f39;
+  margin: 25px 20px;
+}
+.lib_p_img {
+  font-size: 12px;
+  text-align: left;
+  line-height: 15px;
+  margin-left: 20px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  color: #556561;
+}
+.btn_span {
+  font-size: 12px;
+  text-align: left;
+  margin: 24px 20px;
+  color: #556561;
+}
+.span_btn {
+  color: #1c3f39;
+  text-decoration: none;
+  font-weight: 500;
+  transition: 0.2s;
+}
+.pace_img {
+  height: 248px;
+  width: 234px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+.span_btn:hover {
+  text-decoration: none;
+  color: #f2ac0d;
+}
+.read_btn {
+  height: 54px;
+  width: 160px;
+  border: none;
+  padding: 10px 20px;
+  transition: 0.5s;
+  margin: 60px auto;
+}
+.btn_read_all {
+  background-color: #f2ac0d;
+  color: #1c3f39;
+  border: none;
+  border-radius: 6px;
+  padding: 10px 20px;
+  transition: 0.5s;
+  height: 54px;
+  width: 160px;
+  transform: 0.5s;
+}
+.btn_read_all:hover {
+  background-color: #fff;
+  color: #1c3f39;
+  border: 1px solid #1c3f39;
+}
+
+/* App Container */
+
+.app_container {
+  height: 458px;
+  width: 100%;
+  background-color: #1c3f39;
+  padding: 100px;
+}
+.app_h {
+  font-size: 35px;
+  text-align: center;
+  margin: 12px;
+  color: #fff;
+}
+.app_p {
+  font-size: 12px;
+  font-weight: normal;
+  color: #fff;
+  text-align: center;
+  margin: 12px;
+}
+.app_btn {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+.click_app {
+  height: 40px;
+  width: 135px;
+  background-color: #fff;
+  border-radius: 5px;
+  margin: 20px 10px;
+  padding: 7px 10px;
+  display: flex;
+}
+.click_app_Cont {
+  text-decoration: none;
+}
+.click_app_Cont:hover {
+  text-decoration: none;
+}
+.playstr {
+  height: 25px;
+  width: 25px;
+}
+.apple_ico {
+  font-size: 25px;
+  color: #1c3f39;
+}
+.txt_btn_app_h {
+  font-size: 10px;
+  font-weight: 600;
+  margin: 0px 0px 0px 10px;
+  color: #1c3f39;
+}
+.txt_btn_app_p {
+  font-size: 12px;
+  margin: 0px 0px 0px 10px;
+  font-weight: bold;
+  color: #1c3f39;
+}
+
+/* Footer Section Starts Here */
+.footr {
+  width: 100%;
+  height: 555px;
+  background-color: #e9e6d7;
+  padding: 120px 135px 30px 135px;
+}
+.nav_sco_container {
+  width: 100%;
+  height: 300px;
+  display: flex;
+  justify-content: end;
+}
+.social_logo {
+  height: 300px;
+  width: 300px;
+}
+.navigators {
+  height: 300px;
+  width: 870px;
+  display: grid;
+  grid-template-columns: repeat(4, 180px);
+  column-gap: 30px;
+}
+.nav_1 {
+  grid-column-start: 1;
+  grid-column-end: 2;
+  margin-left: 50px;
+}
+.nav_2 {
+  grid-column-start: 2;
+  grid-column-end: 3;
+}
+.nav_3 {
+  grid-column-start: 3;
+  grid-column-end: 4;
+}
+.nav_4 {
+  grid-column-start: 4;
+  grid-column-end: 5;
+}
+.link_h {
+  text-decoration: none;
+  color: #1c3f39;
+}
+.link_h:hover {
+  text-decoration: none;
+  color: #1c3f39;
+}
+.link_h {
+  font-size: 15px;
+}
+.link_h_p {
+  text-decoration: none;
+  color: #1c3f39;
+  font-size: 12px;
+  margin: 18px 0px;
+}
+.ftr_logo {
+  font-size: 20px;
+  font-weight: bold;
+  color: #f2ac0d;
+  margin-right: 10px;
+}
+.logo_ftr {
+  font-size: 20px;
+  color: #1c3f39;
+  font-weight: bold;
+}
+.logo_p {
+  color: #1c3f39;
+  margin: 10px 0px;
+}
+.social_icon {
+  margin: 20px 0px;
+  display: flex;
+}
+.ftr_icon {
+  font-size: 20px;
+  position: relative;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.ico_bg {
+  height: 42px;
+  width: 42px;
+  border-radius: 50%;
+  margin-right: 10px;
+  background-color: #d1cdb7;
+}
+.ico_bg:hover {
+  background-color: #f2ac0d;
+}
+.sco_clk {
+  color: #1c3f39;
+  text-decoration: none;
+}
+.sco_clk:hover {
+  color: #1c3f39;
+  text-decoration: none;
+}
+.ftr_u_line {
+  height: 0.1px;
+  width: 100%;
+  background-color: #1c3f39;
+  margin: 20px 0px;
+}
+.logo_ftr_lnk {
+  text-decoration: none;
+}
+.logo_ftr_lnk:hover {
+  text-decoration: none;
+}
+.b_to_top {
+  background-color: #1c3f39;
+  height: 48px;
+  width: 48px;
+  border-radius: 5px;
+  padding: 12px 15px;
+  float: right;
+}
+.arr_up {
+  color: #fff;
+  text-align: center;
+}
+.language {
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#lang_selector {
+  border: none;
+  background-color: #e9e6d7;
+}
+/* Responsive Design */
+
+@media (max-width: 768px) {
+  nav ul {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 15px;
+  }
+
+  nav ul li {
+    margin: 10px 0;
+  }
+
+  nav ul li a {
+    font-size: 16px;
+    color: #26534c;
+    display: block;
+  }
+
+  .btn-login,
+  .btn-signup {
+    display: block;
+  }
+}
